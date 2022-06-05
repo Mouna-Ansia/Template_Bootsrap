@@ -1,0 +1,201 @@
+/* 1.global style  */
+/* 2.common style */
+/* general style.............................................................................. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* small screen */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #777 !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #CCCCFF !important;
+}
+a:hover{
+    color: white !important;
+}
+ul{
+    list-style: none;
+}
+
+.carousel-inner h1{
+    text-shadow: 1px 1px #333;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 7px;
+}
+.card-body h2{
+    font-size: 40px;
+}
+code{
+    font-size: 18px !important;
+}
+.myicon{
+    height:30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 17px;
+}
+.fixedimg{
+background-attachment: fixed;
+background-size: cover;
+height: 250px;
+}
+.fixedimg1{
+background-image: url(../images/bg1.jpg);
+}
+.fixedimg2{
+background-image: url(../images/images.jpg);
+}
+.btnbefo{
+    position: relative;
+    left: 30px;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent lightblue transparent;
+top: 20px;
+left: 13px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 80px;
+background-color: lightblue;
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btnbefo:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px white,
+                -10px -10px 20px white;
+}
+.dropdown-menu li a{
+    text-shadow: 1px 1px 0px black;
+}
+
+
+
+
+
+@mixin center(){
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+      left:50%;
+      top:50%;
+  }
+  
+  
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+  /* html{
+    width:100%;
+    height: 100%;
+  } */
+  /* body{
+    background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+    background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+    margin: 0; */
+    /* width: 100%;
+    height: 100%; */
+    /* font-family: 'Raleway', sans-serif;
+  } */
+  .container2{
+    position:absolute;
+    @include center();
+  }
+  .title{
+    font-weight: bold;
+    color: transparent;
+    font-size:35px;
+    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+    /* background-position: 40% 250%; */
+    -webkit-background-clip: text;
+    position:relative;
+    text-align:center;
+    /* line-height:90px; */
+    transform: translate(120px,-10px);
+    /* letter-spacing: -8px; */
+    
+  }
+  
+  /* small screen */
+@media (min-width:768px){
+    .container2 {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width:992px){
+    .container2{
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width:1200px){
+    .container2{
+        width: 1170px;
+    }
+}
+
+
+/* .container-fluid .row .mn:hover{
+    height: 300px;
+    /* width: 500px; */
+    
+/* } */
+/* .container-fluid .row .mn .mna:hover{
+    height: 400px;
+    width: 350px;
+    transform: translate(-30px);
+    z-index: 4;
+    transition: all 1s;
+}  */
